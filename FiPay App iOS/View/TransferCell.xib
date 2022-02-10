@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransferCell" rowHeight="86" id="KGk-i7-Jjw" customClass="TransferCell" customModule="FiPay_App_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="UFk-tL-YNP">
+                        <rect key="frame" x="10" y="10" width="370" height="65"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auto Layout Horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="RPl-tQ-7I0">
+                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="R07-tM-zzb"/>
+                                    <constraint firstAttribute="height" constant="65" id="yfL-ox-p1U"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gba-qZ-cpg">
+                                <rect key="frame" x="76" y="0.0" width="294" height="65"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="jtr-6i-ep7">
+                                        <rect key="frame" x="10" y="10" width="274" height="45"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tnz-Qp-ywn">
+                                                <rect key="frame" x="0.0" y="0.0" width="194.5" height="45"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-Dv-3xT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="194.5" height="17"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfered to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShI-NC-kvE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123.456.789-00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk7-wz-PsA">
+                                                                <rect key="frame" x="89.5" y="0.0" width="105" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 30,2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PI-uc-NmU">
+                                                        <rect key="frame" x="0.0" y="25" width="99.5" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$37.59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B90-rk-P9h">
+                                                <rect key="frame" x="221.5" y="0.0" width="52.5" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jtr-6i-ep7" secondAttribute="bottom" constant="10" id="cNG-tS-H7W"/>
+                                    <constraint firstAttribute="trailing" secondItem="jtr-6i-ep7" secondAttribute="trailing" constant="10" id="k9T-Nb-onK"/>
+                                    <constraint firstItem="jtr-6i-ep7" firstAttribute="leading" secondItem="Gba-qZ-cpg" secondAttribute="leading" constant="10" id="l9G-be-oIB"/>
+                                    <constraint firstItem="jtr-6i-ep7" firstAttribute="top" secondItem="Gba-qZ-cpg" secondAttribute="top" constant="10" id="xZi-nx-ErE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UFk-tL-YNP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FQL-f6-rUl"/>
+                    <constraint firstAttribute="trailing" secondItem="UFk-tL-YNP" secondAttribute="trailing" constant="10" id="HOp-86-7XU"/>
+                    <constraint firstAttribute="bottom" secondItem="UFk-tL-YNP" secondAttribute="bottom" constant="10" id="WYF-O1-rW7"/>
+                    <constraint firstItem="UFk-tL-YNP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="qmB-Xk-NPy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="transferImage" destination="RPl-tQ-7I0" id="UfX-wT-820"/>
+                <outlet property="transferRecipient" destination="Qk7-wz-PsA" id="9Zg-3U-OGq"/>
+                <outlet property="transferValue" destination="B90-rk-P9h" id="JUS-kG-8nd"/>
+                <outlet property="trasnferDate" destination="9PI-uc-NmU" id="w6H-BA-n80"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="48"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Auto Layout Horizontal" width="56" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DepositCell" rowHeight="95" id="KGk-i7-Jjw" customClass="DepositCell" customModule="FiPay_App_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="pAM-8x-xRJ">
+                        <rect key="frame" x="15" y="15" width="402" height="65"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gyG-8h-ycy">
+                                <rect key="frame" x="0.0" y="1" width="65" height="62.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="2QF-a2-bBu"/>
+                                    <constraint firstAttribute="width" constant="65" id="89C-hi-QVT"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Q7-zC-rtX">
+                                <rect key="frame" x="67" y="0.0" width="335" height="65"/>
+                                <subviews>
+                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" spacing="128" translatesAutoresizingMaskIntoConstraints="NO" id="GUt-E8-7Af">
+                                        <rect key="frame" x="10" y="10" width="315" height="45"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vht-FB-P64">
+                                                <rect key="frame" x="0.0" y="0.0" width="106" height="45"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Work Paycheck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDe-5a-1aX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="106" height="26.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="January 14, 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20I-3g-nwp">
+                                                        <rect key="frame" x="0.0" y="31.5" width="106" height="13.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1245.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtq-8m-5ft">
+                                                <rect key="frame" x="234" y="0.0" width="81" height="45"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="GUt-E8-7Af" secondAttribute="trailing" constant="10" id="5R7-ZK-Vj7"/>
+                                    <constraint firstItem="GUt-E8-7Af" firstAttribute="leading" secondItem="9Q7-zC-rtX" secondAttribute="leading" constant="10" id="62i-qI-5l8"/>
+                                    <constraint firstAttribute="bottom" secondItem="GUt-E8-7Af" secondAttribute="bottom" constant="10" id="QTz-9Q-plI"/>
+                                    <constraint firstItem="GUt-E8-7Af" firstAttribute="top" secondItem="9Q7-zC-rtX" secondAttribute="top" constant="10" id="lK1-GI-ue1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pAM-8x-xRJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="BO0-51-XZ9"/>
+                    <constraint firstAttribute="trailing" secondItem="pAM-8x-xRJ" secondAttribute="trailing" constant="5" id="F3d-ED-RMK"/>
+                    <constraint firstItem="pAM-8x-xRJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="mDM-jR-ca4"/>
+                    <constraint firstAttribute="bottom" secondItem="pAM-8x-xRJ" secondAttribute="bottom" constant="15" id="mfI-rb-4TT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="depositDateLbl" destination="20I-3g-nwp" id="tOz-wE-dh6"/>
+                <outlet property="depositDescriptionLbl" destination="EDe-5a-1aX" id="ABC-i4-DUs"/>
+                <outlet property="depositValueLbl" destination="mtq-8m-5ft" id="7b4-ZS-Oml"/>
+            </connections>
+            <point key="canvasLocation" x="136.23188405797103" y="16.40625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.right.square" catalog="system" width="128" height="114"/>
+    </resources>
+</document>
